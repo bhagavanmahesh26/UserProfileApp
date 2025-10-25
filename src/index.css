@@ -13,8 +13,16 @@ body {
 .user-card-text {
   line-height: 1.5;
   word-spacing: 0.05em;
+  text-align: left;
+  display: block;
 }
 
 .user-card-icon {
   margin-top: 2px;
+}
+
+/* Ensure all text is left-aligned */
+.user-card-content {
+  text-align: left;
+  width: 100%;
 }

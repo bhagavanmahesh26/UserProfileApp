@@ -26,7 +26,7 @@ const UserCard = ({ user, onEdit, onDelete, isLoading }) => {
   }
 
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200 overflow-hidden">
+    <div className="bg-white rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200 overflow-hidden text-left">
       {/* Header with avatar and actions */}
       <div className="p-6 pb-4">
         <div className="flex items-start space-x-3">
@@ -39,11 +39,11 @@ const UserCard = ({ user, onEdit, onDelete, isLoading }) => {
           </div>
           <div className="min-w-0 flex-1">
             <div className="flex items-start justify-between">
-              <div className="min-w-0 flex-1 pr-2">
-                <h3 className="text-lg font-semibold text-gray-900 break-words user-card-text">
+              <div className="min-w-0 flex-1 pr-2 text-left">
+                <h3 className="text-lg font-semibold text-gray-900 break-words user-card-text text-left">
                   {user.firstName} {user.lastName}
                 </h3>
-                <p className="text-sm text-gray-500 break-words user-card-text">
+                <p className="text-sm text-gray-500 break-words user-card-text text-left">
                   {user.jobTitle || 'No title'}
                 </p>
               </div>
@@ -71,32 +71,32 @@ const UserCard = ({ user, onEdit, onDelete, isLoading }) => {
       </div>
 
       {/* User details */}
-      <div className="px-6 pb-4 space-y-3">
+      <div className="px-6 pb-4 space-y-3 text-left">
         {user.email && (
-          <div className="flex items-start space-x-3 text-sm">
+          <div className="flex items-start space-x-3 text-sm text-left">
             <EnvelopeIcon className="h-4 w-4 text-gray-400 flex-shrink-0 user-card-icon" />
-            <span className="text-gray-600 break-all user-card-text">{user.email}</span>
+            <span className="text-gray-600 break-all user-card-text text-left">{user.email}</span>
           </div>
         )}
         
         {user.phone && (
-          <div className="flex items-start space-x-3 text-sm">
+          <div className="flex items-start space-x-3 text-sm text-left">
             <PhoneIcon className="h-4 w-4 text-gray-400 flex-shrink-0 user-card-icon" />
-            <span className="text-gray-600 user-card-text">{user.phone}</span>
+            <span className="text-gray-600 user-card-text text-left">{user.phone}</span>
           </div>
         )}
         
         {user.location && (
-          <div className="flex items-start space-x-3 text-sm">
+          <div className="flex items-start space-x-3 text-sm text-left">
             <MapPinIcon className="h-4 w-4 text-gray-400 flex-shrink-0 user-card-icon" />
-            <span className="text-gray-600 break-words user-card-text">{user.location}</span>
+            <span className="text-gray-600 break-words user-card-text text-left">{user.location}</span>
           </div>
         )}
         
         {user.createdAt && (
-          <div className="flex items-start space-x-3 text-sm">
+          <div className="flex items-start space-x-3 text-sm text-left">
             <CalendarIcon className="h-4 w-4 text-gray-400 flex-shrink-0 user-card-icon" />
-            <span className="text-gray-600 user-card-text">
+            <span className="text-gray-600 user-card-text text-left">
               Added {formatDate(user.createdAt)}
             </span>
           </div>
