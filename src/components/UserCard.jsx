@@ -29,42 +29,43 @@ const UserCard = ({ user, onEdit, onDelete, isLoading }) => {
     <div className="bg-white rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200 overflow-hidden">
       {/* Header with avatar and actions */}
       <div className="p-6 pb-4">
-        <div className="flex items-start justify-between">
-          <div className="flex items-center space-x-3">
-            <div className="flex-shrink-0">
-              <div className="h-12 w-12 rounded-full bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center">
-                <span className="text-white font-semibold text-lg">
-                  {user.firstName?.charAt(0)?.toUpperCase() || 'U'}
-                </span>
-              </div>
-            </div>
-            <div className="min-w-0 flex-1">
-              <h3 className="text-lg font-semibold text-gray-900 truncate">
-                {user.firstName} {user.lastName}
-              </h3>
-              <p className="text-sm text-gray-500 truncate">
-                {user.jobTitle || 'No title'}
-              </p>
+        <div className="flex items-start space-x-3">
+          <div className="flex-shrink-0">
+            <div className="h-12 w-12 rounded-full bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center">
+              <span className="text-white font-semibold text-lg">
+                {user.firstName?.charAt(0)?.toUpperCase() || 'U'}
+              </span>
             </div>
           </div>
-          
-          <div className="flex items-center space-x-2">
-            <button
-              onClick={() => onEdit(user)}
-              disabled={isLoading}
-              className="p-2 text-gray-400 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors duration-200 disabled:opacity-50"
-              title="Edit user"
-            >
-              <PencilIcon className="h-4 w-4" />
-            </button>
-            <button
-              onClick={() => setShowDeleteConfirm(true)}
-              disabled={isLoading}
-              className="p-2 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors duration-200 disabled:opacity-50"
-              title="Delete user"
-            >
-              <TrashIcon className="h-4 w-4" />
-            </button>
+          <div className="min-w-0 flex-1">
+            <div className="flex items-start justify-between">
+              <div className="min-w-0 flex-1 pr-2">
+                <h3 className="text-lg font-semibold text-gray-900 break-words">
+                  {user.firstName} {user.lastName}
+                </h3>
+                <p className="text-sm text-gray-500 truncate">
+                  {user.jobTitle || 'No title'}
+                </p>
+              </div>
+              <div className="flex items-center space-x-1 flex-shrink-0">
+                <button
+                  onClick={() => onEdit(user)}
+                  disabled={isLoading}
+                  className="p-2 text-gray-400 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors duration-200 disabled:opacity-50"
+                  title="Edit user"
+                >
+                  <PencilIcon className="h-4 w-4" />
+                </button>
+                <button
+                  onClick={() => setShowDeleteConfirm(true)}
+                  disabled={isLoading}
+                  className="p-2 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors duration-200 disabled:opacity-50"
+                  title="Delete user"
+                >
+                  <TrashIcon className="h-4 w-4" />
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -72,9 +73,9 @@ const UserCard = ({ user, onEdit, onDelete, isLoading }) => {
       {/* User details */}
       <div className="px-6 pb-4 space-y-3">
         {user.email && (
-          <div className="flex items-center space-x-3 text-sm">
-            <EnvelopeIcon className="h-4 w-4 text-gray-400 flex-shrink-0" />
-            <span className="text-gray-600 truncate">{user.email}</span>
+          <div className="flex items-start space-x-3 text-sm">
+            <EnvelopeIcon className="h-4 w-4 text-gray-400 flex-shrink-0 mt-0.5" />
+            <span className="text-gray-600 break-all">{user.email}</span>
           </div>
         )}
         
@@ -86,9 +87,9 @@ const UserCard = ({ user, onEdit, onDelete, isLoading }) => {
         )}
         
         {user.location && (
-          <div className="flex items-center space-x-3 text-sm">
-            <MapPinIcon className="h-4 w-4 text-gray-400 flex-shrink-0" />
-            <span className="text-gray-600 truncate">{user.location}</span>
+          <div className="flex items-start space-x-3 text-sm">
+            <MapPinIcon className="h-4 w-4 text-gray-400 flex-shrink-0 mt-0.5" />
+            <span className="text-gray-600 break-words">{user.location}</span>
           </div>
         )}
         

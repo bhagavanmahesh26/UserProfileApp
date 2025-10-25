@@ -65,6 +65,17 @@ export const demoUsers = [
     location: 'Chicago, IL',
     bio: 'Marketing manager with 8+ years of experience in digital marketing and brand strategy. MBA from Northwestern.',
     createdAt: '2024-02-20T13:45:00.000Z'
+  },
+  {
+    id: '7',
+    firstName: 'Bhagavan Mahesh',
+    lastName: 'Medisetti',
+    email: 'workmahesh45@gmail.com',
+    phone: '9133799567',
+    jobTitle: 'Intern',
+    location: 'Kakinada, Andhra Pradesh, India',
+    bio: 'Aspiring software developer with passion for learning new technologies and building innovative solutions.',
+    createdAt: '2024-10-25T16:30:00.000Z'
   }
 ]
 
