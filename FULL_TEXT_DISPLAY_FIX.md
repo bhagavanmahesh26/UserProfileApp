@@ -128,3 +128,4 @@ Both names and job titles now display completely:
 - **Full Accessibility**: All information is readable
 
 The full text display fix ensures that both names and job titles are completely visible while maintaining a clean, professional layout that adapts to content length.
+

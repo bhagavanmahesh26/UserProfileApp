@@ -113,3 +113,4 @@ The single-line display works consistently across all screen sizes:
 - **Long Job Title**: "Senior Software Development Engineer" - displays as "Senior Software Develop..."
 
 The single-line fix ensures that names and job titles always stay on single lines with proper ellipsis truncation, maintaining a clean and professional appearance across all user cards.
+

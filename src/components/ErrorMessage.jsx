@@ -26,3 +26,4 @@ const ErrorMessage = ({ message, onClose }) => {
 }
 
 export default ErrorMessage
+

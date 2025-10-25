@@ -108,3 +108,4 @@ The alignment improvements work across all screen sizes:
 - **Accessibility**: Better text structure and hierarchy
 
 The text alignment fix ensures that all user cards have consistent, professional-looking text alignment regardless of content length or screen size.
+

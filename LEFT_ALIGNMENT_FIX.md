@@ -111,3 +111,4 @@ The left alignment works consistently across all screen sizes:
 - **Overall Layout**: Clean, professional appearance
 
 The left alignment fix ensures that all text content in user cards starts from the left side consistently, providing a clean and professional appearance across all devices and screen sizes.
+

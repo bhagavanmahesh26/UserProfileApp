@@ -71,3 +71,4 @@ No environment variables are required for this application as it uses localStora
 - No external API calls or data transmission
 - No authentication required
 - Safe for public deployment
+
