@@ -93,6 +93,13 @@ const UserCard = ({ user, onEdit, onDelete, isLoading }) => {
           </div>
         )}
         
+        {user.bio && (
+          <div className="flex items-start space-x-3 text-sm text-left">
+            <span className="text-gray-400 flex-shrink-0 user-card-icon font-bold">Bio:</span>
+            <span className="text-gray-600 break-words user-card-text text-left">{user.bio}</span>
+          </div>
+        )}
+        
         {user.createdAt && (
           <div className="flex items-start space-x-3 text-sm text-left">
             <CalendarIcon className="h-4 w-4 text-gray-400 flex-shrink-0 user-card-icon" />
