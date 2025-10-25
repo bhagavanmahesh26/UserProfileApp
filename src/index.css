@@ -26,3 +26,16 @@ body {
   text-align: left;
   width: 100%;
 }
+
+/* Single line styles for names and job titles */
+.user-card-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.user-card-job-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
