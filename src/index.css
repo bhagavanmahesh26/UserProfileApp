@@ -27,15 +27,15 @@ body {
   width: 100%;
 }
 
-/* Single line styles for names and job titles */
-.user-card-name {
+/* Single line styles for job titles only */
+.user-card-job-title {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.user-card-job-title {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+/* Allow names to wrap naturally */
+.user-card-name {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }

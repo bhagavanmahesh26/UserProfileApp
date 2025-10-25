@@ -40,7 +40,7 @@ const UserCard = ({ user, onEdit, onDelete, isLoading }) => {
           <div className="min-w-0 flex-1">
             <div className="flex items-start justify-between">
               <div className="min-w-0 flex-1 pr-2 text-left">
-                <h3 className="text-lg font-semibold text-gray-900 user-card-text user-card-name text-left">
+                <h3 className="text-lg font-semibold text-gray-900 user-card-text text-left break-words">
                   {user.firstName} {user.lastName}
                 </h3>
                 <p className="text-sm text-gray-500 user-card-text user-card-job-title text-left">
