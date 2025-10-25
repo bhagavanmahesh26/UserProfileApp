@@ -8,3 +8,13 @@ body {
   padding: 0;
   background-color: #f9fafb;
 }
+
+/* Custom styles for better text alignment */
+.user-card-text {
+  line-height: 1.5;
+  word-spacing: 0.05em;
+}
+
+.user-card-icon {
+  margin-top: 2px;
+}

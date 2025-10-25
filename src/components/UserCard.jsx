@@ -40,10 +40,10 @@ const UserCard = ({ user, onEdit, onDelete, isLoading }) => {
           <div className="min-w-0 flex-1">
             <div className="flex items-start justify-between">
               <div className="min-w-0 flex-1 pr-2">
-                <h3 className="text-lg font-semibold text-gray-900 break-words">
+                <h3 className="text-lg font-semibold text-gray-900 break-words user-card-text">
                   {user.firstName} {user.lastName}
                 </h3>
-                <p className="text-sm text-gray-500 truncate">
+                <p className="text-sm text-gray-500 break-words user-card-text">
                   {user.jobTitle || 'No title'}
                 </p>
               </div>
@@ -74,29 +74,29 @@ const UserCard = ({ user, onEdit, onDelete, isLoading }) => {
       <div className="px-6 pb-4 space-y-3">
         {user.email && (
           <div className="flex items-start space-x-3 text-sm">
-            <EnvelopeIcon className="h-4 w-4 text-gray-400 flex-shrink-0 mt-0.5" />
-            <span className="text-gray-600 break-all">{user.email}</span>
+            <EnvelopeIcon className="h-4 w-4 text-gray-400 flex-shrink-0 user-card-icon" />
+            <span className="text-gray-600 break-all user-card-text">{user.email}</span>
           </div>
         )}
         
         {user.phone && (
-          <div className="flex items-center space-x-3 text-sm">
-            <PhoneIcon className="h-4 w-4 text-gray-400 flex-shrink-0" />
-            <span className="text-gray-600">{user.phone}</span>
+          <div className="flex items-start space-x-3 text-sm">
+            <PhoneIcon className="h-4 w-4 text-gray-400 flex-shrink-0 user-card-icon" />
+            <span className="text-gray-600 user-card-text">{user.phone}</span>
           </div>
         )}
         
         {user.location && (
           <div className="flex items-start space-x-3 text-sm">
-            <MapPinIcon className="h-4 w-4 text-gray-400 flex-shrink-0 mt-0.5" />
-            <span className="text-gray-600 break-words">{user.location}</span>
+            <MapPinIcon className="h-4 w-4 text-gray-400 flex-shrink-0 user-card-icon" />
+            <span className="text-gray-600 break-words user-card-text">{user.location}</span>
           </div>
         )}
         
         {user.createdAt && (
-          <div className="flex items-center space-x-3 text-sm">
-            <CalendarIcon className="h-4 w-4 text-gray-400 flex-shrink-0" />
-            <span className="text-gray-600">
+          <div className="flex items-start space-x-3 text-sm">
+            <CalendarIcon className="h-4 w-4 text-gray-400 flex-shrink-0 user-card-icon" />
+            <span className="text-gray-600 user-card-text">
               Added {formatDate(user.createdAt)}
             </span>
           </div>
