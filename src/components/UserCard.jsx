@@ -43,7 +43,7 @@ const UserCard = ({ user, onEdit, onDelete, isLoading }) => {
                 <h3 className="text-lg font-semibold text-gray-900 user-card-text text-left break-words">
                   {user.firstName} {user.lastName}
                 </h3>
-                <p className="text-sm text-gray-500 user-card-text user-card-job-title text-left">
+                <p className="text-sm text-gray-500 user-card-text text-left break-words">
                   {user.jobTitle || 'No title'}
                 </p>
               </div>
