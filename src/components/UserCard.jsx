@@ -26,7 +26,7 @@ const UserCard = ({ user, onEdit, onDelete, isLoading }) => {
   }
 
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200 overflow-hidden text-left">
+    <div className="bg-white rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200 overflow-visible text-left min-w-0">
       {/* Header with avatar and actions */}
       <div className="p-6 pb-4">
         <div className="flex items-start space-x-3">
@@ -43,7 +43,7 @@ const UserCard = ({ user, onEdit, onDelete, isLoading }) => {
                 <h3 className="text-lg font-semibold text-gray-900 user-card-text text-left break-words">
                   {user.firstName} {user.lastName}
                 </h3>
-                <p className="text-sm text-gray-500 user-card-text text-left break-words">
+                <p className="text-sm text-gray-500 user-card-text text-left user-card-job-title-single">
                   {user.jobTitle || 'No title'}
                 </p>
               </div>
